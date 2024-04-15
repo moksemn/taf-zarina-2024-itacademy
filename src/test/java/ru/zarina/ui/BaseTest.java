@@ -11,6 +11,5 @@ public class BaseTest {
                 .closeAdvertising()
                 .confirmCity()
                 .acceptCookies();
-
     }
 }

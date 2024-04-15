@@ -13,8 +13,7 @@ import java.io.IOException;
 public class LoginTest extends BaseTest {
     @BeforeEach
     public void openLoginPage() {
-        HomePage homePage = new HomePage();
-        homePage.openLoginPage();
+        new HomePage().openLoginPage();
     }
 
     @Test
