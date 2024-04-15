@@ -35,7 +35,7 @@ public class FavoritesTest extends BaseTest {
                 .openFirstProductInCatalog()
                 .addProductToFavorites()
                 .openFavoritesPage()
-                .deleteProductInFavorites()
+                .deleteProductFromFavorites()
                 .getTextMessageEmptyFavorites();
         Assertions.assertEquals(FavoritesPage.EXPECTED_MESSAGE_EMPTY_FAVORITES, messageEmptyFavorites);
     }

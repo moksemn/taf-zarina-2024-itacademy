@@ -16,7 +16,7 @@ public class FavoritesPage {
     @FindBy(xpath = "//div[@class=\"favorites__title favorites__title--left\"]/h1")
     private WebElement favoritesTitle;
     @FindBy(xpath = "//div[@class=\"catalog__product-favorites active\"]")
-    private WebElement deleteProductInFavoritesBtn;
+    private WebElement deleteProductFromFavoritesBtn;
     @FindBy(css = ".plainText>p")
     private WebElement messageEmptyFavorites;
     private WebDriver driver;
@@ -32,10 +32,10 @@ public class FavoritesPage {
     }
 
     @Step("Удаление товара из избранного")
-    public FavoritesPage deleteProductInFavorites() {
-        Waiting.waitForVisibilityOfElement(deleteProductInFavoritesBtn).isDisplayed();
+    public FavoritesPage deleteProductFromFavorites() {
+        Waiting.waitForVisibilityOfElement(deleteProductFromFavoritesBtn).isDisplayed();
         new Actions(driver)
-                .moveToElement(deleteProductInFavoritesBtn).click()
+                .moveToElement(deleteProductFromFavoritesBtn).click()
                 .perform();
         return this;
     }
