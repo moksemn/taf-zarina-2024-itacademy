@@ -27,7 +27,7 @@ public class UserCreator {
             System.getProperties().load(ClassLoader.getSystemResourceAsStream("user.properties"));
             return new User(System.getProperty("email"), System.getProperty("password"));
         } catch (IOException e) {
-            return null;
+            return new User("", "");
         }
     }
 }

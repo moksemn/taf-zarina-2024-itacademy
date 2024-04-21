@@ -26,7 +26,7 @@ public class LoginService {
             System.getProperties().load(ClassLoader.getSystemResourceAsStream("user.properties"));
             return getBody(System.getProperty("email"), System.getProperty("password"));
         } catch (IOException e) {
-            return null;
+            return getBody("", "");
         }
     }
 
