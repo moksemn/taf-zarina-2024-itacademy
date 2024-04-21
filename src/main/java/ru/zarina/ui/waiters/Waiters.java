@@ -1,4 +1,4 @@
-package ru.zarina.ui.waiting;
+package ru.zarina.ui.waiters;
 
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.NoSuchElementException;
@@ -12,7 +12,7 @@ import ru.zarina.ui.driver.DriverSingleton;
 
 import java.time.Duration;
 
-public class Waiting {
+public class Waiters {
     private static final int TIME_OUT_SECONDS = 10;
 
     public static WebElement waitForElementToBeClickable(WebElement webElement) {

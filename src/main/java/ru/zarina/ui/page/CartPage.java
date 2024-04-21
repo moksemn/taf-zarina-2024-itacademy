@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import ru.zarina.ui.driver.DriverSingleton;
-import ru.zarina.ui.waiting.Waiting;
+import ru.zarina.ui.waiters.Waiters;
 
 public class CartPage {
     public static final String EXPECTED_MESSAGE_EMPTY_CART = "В корзине нет товаров!\nПРОДОЛЖИТЬ ШОППИНГ";
@@ -26,17 +26,17 @@ public class CartPage {
 
     @Step("Получение названия товара в корзине")
     public String getTextProductTitleInCart() {
-        return Waiting.waitForVisibilityOfElement(productTitleInCart).getText();
+        return Waiters.waitForVisibilityOfElement(productTitleInCart).getText();
     }
 
     @Step("Удаление товара из корзины")
     public CartPage deleteProductFromCart() {
-        Waiting.waitForElementToBeClickable(deleteProductFromCartBtn).click();
+        Waiters.waitForElementToBeClickable(deleteProductFromCartBtn).click();
         return this;
     }
 
     @Step("Получение сообщения об отсутствии товаров в корзине")
     public String getTextMessageEmptyCart() {
-        return Waiting.waitForVisibilityOfElement(messageEmptyCart).getText();
+        return Waiters.waitForVisibilityOfElement(messageEmptyCart).getText();
     }
 }

@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import ru.zarina.ui.domain.model.User;
 import ru.zarina.ui.driver.DriverSingleton;
-import ru.zarina.ui.waiting.Waiting;
+import ru.zarina.ui.waiters.Waiters;
 
 public class LoginPage {
     public final static String EXPECTED_LOGIN_ERROR_MESSAGE = "Неправильный логин или пароль";
@@ -47,27 +47,27 @@ public class LoginPage {
 
     @Step("Получение сообщения о некоректности введенных данных")
     public String getTextLoginErrorMessage() {
-        return Waiting.waitForVisibilityOfElement(loginErrorMessage).getText();
+        return Waiters.waitForVisibilityOfElement(loginErrorMessage).getText();
     }
 
     @Step("Получение сообщения об отсутствии адреса электронной почты")
     public String getTextEmailErrorMessage() {
-        return Waiting.waitForVisibilityOfElement(emailErrorMessage).getText();
+        return Waiters.waitForVisibilityOfElement(emailErrorMessage).getText();
     }
 
     @Step("Получение сообщения об отсутствии пароля")
     public String getTextPasswordErrorMessage() {
-        return Waiting.waitForVisibilityOfElement(passwordErrorMessage).getText();
+        return Waiters.waitForVisibilityOfElement(passwordErrorMessage).getText();
     }
 
     @Step("Получение заголовка успешной авторизации")
     public String getTextTitleSuccessfulLogin() {
-        return Waiting.waitForVisibilityOfElement(titleSuccessfulLogin).getText();
+        return Waiters.waitForVisibilityOfElement(titleSuccessfulLogin).getText();
     }
 
     @Step("Вход в профиль пользователя")
     public LoginPage openProfile() {
-        Waiting.waitForElementToBeClickable(profileBtn).click();
+        Waiters.waitForElementToBeClickable(profileBtn).click();
         return this;
     }
 }

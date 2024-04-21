@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import ru.zarina.ui.driver.DriverSingleton;
-import ru.zarina.ui.waiting.Waiting;
+import ru.zarina.ui.waiters.Waiters;
 
 public class HomePage {
     private static final String URL = "https://zarina.ru/";
@@ -45,7 +45,7 @@ public class HomePage {
     @Step("Закрытие рекламы")
     public HomePage closeAdvertising() {
         try {
-            Waiting.fluentWaitIgnoringElementClickIntercepted(closeAdvertisingBtn).click();
+            Waiters.fluentWaitIgnoringElementClickIntercepted(closeAdvertisingBtn).click();
         } catch (TimeoutException e) {
             System.out.println("Реклама отсутствует");
         }
@@ -66,7 +66,7 @@ public class HomePage {
 
     @Step("Открытие страницы входа")
     public LoginPage openLoginPage() {
-        Waiting.waitForElementToBeClickable(loginBtn).click();
+        Waiters.waitForElementToBeClickable(loginBtn).click();
         return new LoginPage();
     }
 
@@ -91,7 +91,7 @@ public class HomePage {
     @Step("Открытие каталога")
     public CatalogPage openCatalogPage() {
         catalogMenuBtn.click();
-        Waiting.waitForElementToBeClickable(firstSectionInCatalogMenuBtn).click();
+        Waiters.waitForElementToBeClickable(firstSectionInCatalogMenuBtn).click();
         return new CatalogPage();
     }
 

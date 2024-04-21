@@ -7,7 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import ru.zarina.ui.driver.DriverSingleton;
-import ru.zarina.ui.waiting.Waiting;
+import ru.zarina.ui.waiters.Waiters;
 
 public class FavoritesPage {
     public static final String EXPECTED_MESSAGE_EMPTY_FAVORITES = "В избранном нет товаров. Вам могут понравиться товары в категории Одежда.";
@@ -28,12 +28,12 @@ public class FavoritesPage {
 
     @Step("Получение названия товара в избранном")
     public String getTextProductTitleInFavorites() {
-        return Waiting.waitForVisibilityOfElement(productTitleInFavorites).getText();
+        return Waiters.waitForVisibilityOfElement(productTitleInFavorites).getText();
     }
 
     @Step("Удаление товара из избранного")
     public FavoritesPage deleteProductFromFavorites() {
-        Waiting.waitForVisibilityOfElement(deleteProductFromFavoritesBtn).isDisplayed();
+        Waiters.waitForVisibilityOfElement(deleteProductFromFavoritesBtn).isDisplayed();
         new Actions(driver)
                 .moveToElement(deleteProductFromFavoritesBtn).click()
                 .perform();
@@ -42,6 +42,6 @@ public class FavoritesPage {
 
     @Step("Получение сообщения об отсутствии товаров в избранном")
     public String getTextMessageEmptyFavorites() {
-        return Waiting.waitForVisibilityOfElement(messageEmptyFavorites).getText();
+        return Waiters.waitForVisibilityOfElement(messageEmptyFavorites).getText();
     }
 }

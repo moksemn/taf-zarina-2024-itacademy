@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import ru.zarina.ui.driver.DriverSingleton;
-import ru.zarina.ui.waiting.Waiting;
+import ru.zarina.ui.waiters.Waiters;
 
 public class CatalogPage {
     @FindBy(css = ".catalog__title>h1")
@@ -28,26 +28,26 @@ public class CatalogPage {
 
     @Step("Открытие первого товара в каталоге")
     public CatalogPage openFirstProductInCatalog() {
-        Waiting.waitForVisibilityOfElement(catalogTitle).isDisplayed();
-        Waiting.waitForElementToBeClickable(firstProductInCatalog).click();
+        Waiters.waitForVisibilityOfElement(catalogTitle).isDisplayed();
+        Waiters.waitForElementToBeClickable(firstProductInCatalog).click();
         return this;
     }
 
     @Step("Получение названия товара в карточке продукта")
     public String getTextProductTitle() {
-        return Waiting.waitForVisibilityOfElement(productTitle).getText()
+        return Waiters.waitForVisibilityOfElement(productTitle).getText()
                 .replaceAll("[^а-яА-Яa-zA-Z\\s]", "").trim();
     }
 
     @Step("Добавление товара в корзину")
     public HomePage addProductToCart() {
-        Waiting.waitForVisibilityOfElement(addProductToCartBtn).click();
+        Waiters.waitForVisibilityOfElement(addProductToCartBtn).click();
         return new HomePage();
     }
 
     @Step("Добавление товара в избранное")
     public HomePage addProductToFavorites() {
-        Waiting.waitForVisibilityOfElement(addProductToFavoritesBtn).click();
+        Waiters.waitForVisibilityOfElement(addProductToFavoritesBtn).click();
         return new HomePage();
     }
 }

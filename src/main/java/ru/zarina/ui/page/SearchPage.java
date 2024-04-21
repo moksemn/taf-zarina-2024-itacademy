@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import ru.zarina.ui.domain.model.Product;
 import ru.zarina.ui.driver.DriverSingleton;
-import ru.zarina.ui.waiting.Waiting;
+import ru.zarina.ui.waiters.Waiters;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -38,12 +38,12 @@ public class SearchPage {
 
     @Step("Получение сообщения об отсутсвии найденных товаров")
     public String getTextSearchErrorMessage() {
-        return Waiting.waitForVisibilityOfElement(searchErrorMessage).getText();
+        return Waiters.waitForVisibilityOfElement(searchErrorMessage).getText();
     }
 
     @Step("Получение списка названий найденных товаров")
     public List<String> getProductsNames() {
-        Waiting.waitForVisibilityOfElement(titleSuccessfulSearch).isDisplayed();
+        Waiters.waitForVisibilityOfElement(titleSuccessfulSearch).isDisplayed();
         return productsName.stream().map(x -> x.getText().toLowerCase()).collect(Collectors.toList());
     }
 }
