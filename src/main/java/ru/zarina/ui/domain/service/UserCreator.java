@@ -22,8 +22,12 @@ public class UserCreator {
         return new User("", "");
     }
 
-    public static User withRegisteredUser() throws IOException {
-        System.getProperties().load(ClassLoader.getSystemResourceAsStream("user.properties"));
-        return new User(System.getProperty("email"), System.getProperty("password"));
+    public static User withRegisteredUser() {
+        try {
+            System.getProperties().load(ClassLoader.getSystemResourceAsStream("user.properties"));
+            return new User(System.getProperty("email"), System.getProperty("password"));
+        } catch (IOException e) {
+            return null;
+        }
     }
 }

@@ -9,8 +9,6 @@ import ru.zarina.api.service.LoginService;
 import ru.zarina.listener.ApiTestListener;
 import ru.zarina.util.Decoder;
 
-import java.io.IOException;
-
 import static io.restassured.RestAssured.given;
 
 @ExtendWith(ApiTestListener.class)
@@ -30,7 +28,7 @@ public class LoginTest {
 
     @Test
     @DisplayName("API:POST Registered user login ")
-    public void testRegisteredUserLogin() throws IOException {
+    public void testRegisteredUserLogin() {
         Response response = given()
                 .body(LoginService.getBodyWithRegisteredUser())
                 .headers(LoginService.getHeaders())

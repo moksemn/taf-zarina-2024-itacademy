@@ -1,13 +1,14 @@
 package ru.zarina.ui;
 
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import ru.zarina.ui.domain.service.UserCreator;
 import ru.zarina.listener.UiTestListener;
+import ru.zarina.ui.domain.service.UserCreator;
 import ru.zarina.ui.page.HomePage;
 import ru.zarina.ui.page.LoginPage;
-
-import java.io.IOException;
 
 @ExtendWith(UiTestListener.class)
 public class LoginTest extends BaseTest {
@@ -18,7 +19,7 @@ public class LoginTest extends BaseTest {
 
     @Test
     @DisplayName("UI:POST Registered user login")
-    public void testRegisteredUserLogin() throws IOException {
+    public void testRegisteredUserLogin() {
         String titleSuccessfulLogin = new LoginPage()
                 .login(UserCreator.withRegisteredUser())
                 .openProfile()
