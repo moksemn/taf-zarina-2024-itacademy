@@ -45,9 +45,8 @@ public class HomePage {
     @Step("Закрытие рекламы")
     public HomePage closeAdvertising() {
         try {
-            Waiters.fluentWaitIgnoringElementClickIntercepted(closeAdvertisingBtn).click();
+            Waiters.fluentWait(closeAdvertisingBtn).click();
         } catch (TimeoutException e) {
-            System.out.println("Реклама отсутствует");
         }
         return this;
     }

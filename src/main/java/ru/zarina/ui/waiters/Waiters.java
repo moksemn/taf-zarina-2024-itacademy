@@ -25,7 +25,7 @@ public class Waiters {
                 .visibilityOf(webElement));
     }
 
-    public static WebElement fluentWaitIgnoringElementClickIntercepted(WebElement element) {
+    public static WebElement fluentWait(WebElement element) {
         Wait<WebDriver> waiter = new FluentWait<>(DriverSingleton.getDriver())
                 .withTimeout(Duration.ofSeconds(35))
                 .pollingEvery(Duration.ofSeconds(1))
