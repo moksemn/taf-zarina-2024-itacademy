@@ -9,6 +9,6 @@ public class ProductCreator {
     }
 
     public static Product withIncorrectProduct() {
-        return new Product(DataGenerator.getRandomString(20));
+        return new Product(DataGenerator.getRandomString(14));
     }
 }

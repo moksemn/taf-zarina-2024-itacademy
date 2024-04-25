@@ -3,23 +3,9 @@ package ru.zarina.api.factory;
 import ru.zarina.util.DataGenerator;
 
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
 
-public class LoginFactory {
+public class LoginRequestFactory {
     public static final String URL = "https://zarina.ru/api/auth/email/";
-    public static final String EXPECTED_BODY_EMPTY_EMAIL = "[{\"field_name\":\"email\",\"description\":\"Введите Email\"}]";
-    public static final String EXPECTED_BODY_INVALID_DATA = "{\"message\":\"Неверный email или пароль\"}";
-    public static final String EXPECTED_BODY_EMPTY_PASSWORD = "[{\"field_name\":\"password\",\"description\":\"Введите пароль\"}]";
-    public static final String EXPECTED_BODY_EMPTY_DATA = "[{\"field_name\":\"email\",\"description\":\"Введите Email\"},{\"field_name\":\"password\",\"description\":\"Введите пароль\"}]";
-    public static final String EXPECTED_BODY_INVALID_EMAIL_FORMAT = "[{\"field_name\":\"email\",\"description\":\"Неверный формат Email\"}]";
-    public static final String EXPECTED_USER_ID = "2214182";
-
-    public static Map<String, String> getHeaders() {
-        Map<String, String> headers = new HashMap<>();
-        headers.put("content-type", "application/json");
-        return headers;
-    }
 
     public static String getBodyWithRegisteredUser() {
         try {

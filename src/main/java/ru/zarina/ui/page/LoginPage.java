@@ -67,7 +67,7 @@ public class LoginPage {
 
     @Step("Вход в профиль пользователя")
     public LoginPage openProfile() {
-        Waiters.waitForElementToBeClickable(profileBtn).click();
+        Waiters.waitForVisibilityOfElement(profileBtn).click();
         return this;
     }
 }

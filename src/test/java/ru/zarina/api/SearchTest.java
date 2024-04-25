@@ -5,8 +5,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import ru.zarina.api.factory.SearchFactory;
-import ru.zarina.api.service.SearchService;
+import ru.zarina.api.factory.SearchRequestFactory;
+import ru.zarina.api.service.SearchResponseService;
 import ru.zarina.listener.ApiTestListener;
 
 @ExtendWith(ApiTestListener.class)
@@ -14,19 +14,19 @@ public class SearchTest {
     @Test
     @DisplayName("API:GET Search correct product")
     public void testSearchCorrectProduct() {
-        ValidatableResponse response = SearchService
-                .get(SearchFactory.getQueryParamsWithCorrectProduct());
-        Assertions.assertEquals(200, SearchService.getStatusCode(response));
-        Assertions.assertFalse(SearchService.hasZeroQueries(response));
+        ValidatableResponse response = SearchResponseService
+                .get(SearchRequestFactory.getQueryParamsWithCorrectProduct());
+        Assertions.assertEquals(200, SearchResponseService.getStatusCode(response));
+        Assertions.assertFalse(SearchResponseService.hasZeroQueries(response));
     }
 
 
     @Test
     @DisplayName("API:GET Search incorrect product")
     public void testSearchIncorrectProduct() {
-        ValidatableResponse response = SearchService
-                .get(SearchFactory.getQueryParamsWithIncorrectProduct());
-        Assertions.assertEquals(200, SearchService.getStatusCode(response));
-        Assertions.assertTrue(SearchService.hasZeroQueries(response));
+        ValidatableResponse response = SearchResponseService
+                .get(SearchRequestFactory.getQueryParamsWithIncorrectProduct());
+        Assertions.assertEquals(200, SearchResponseService.getStatusCode(response));
+        Assertions.assertTrue(SearchResponseService.hasZeroQueries(response));
     }
 }

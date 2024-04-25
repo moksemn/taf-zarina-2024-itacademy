@@ -5,14 +5,8 @@ import ru.zarina.util.DataGenerator;
 import java.util.HashMap;
 import java.util.Map;
 
-public class SearchFactory {
+public class SearchRequestFactory {
     public static String URL = "https://sort.diginetica.net/search";
-
-    public static Map<String, String> getHeaders() {
-        Map<String, String> headers = new HashMap<>();
-        headers.put("content-type", "application/json");
-        return headers;
-    }
 
     public static Map<String,String> getQueryParamsWithCorrectProduct(){
         return getQueryParams(DataGenerator.getRandomCorrectProduct());

@@ -1,19 +1,20 @@
 package ru.zarina.api.service;
 
+import io.restassured.http.ContentType;
 import io.restassured.response.ValidatableResponse;
-import ru.zarina.api.factory.SearchFactory;
+import ru.zarina.api.factory.SearchRequestFactory;
 
 import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 
-public class SearchService {
+public class SearchResponseService {
     public static ValidatableResponse get(Map<String, String> queryParams) {
         return given()
                 .queryParams(queryParams)
-                .headers(SearchFactory.getHeaders())
+                .contentType(ContentType.JSON)
                 .when()
-                .get(SearchFactory.URL)
+                .get(SearchRequestFactory.URL)
                 .then();
     }
 

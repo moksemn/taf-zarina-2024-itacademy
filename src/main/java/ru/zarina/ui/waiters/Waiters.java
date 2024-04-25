@@ -28,7 +28,7 @@ public class Waiters {
     public static WebElement fluentWait(WebElement element) {
         Wait<WebDriver> waiter = new FluentWait<>(DriverSingleton.getDriver())
                 .withTimeout(Duration.ofSeconds(35))
-                .pollingEvery(Duration.ofSeconds(1))
+                .pollingEvery(Duration.ofSeconds(2))
                 .ignoring(ElementClickInterceptedException.class, NoSuchElementException.class);
         return waiter.until(ExpectedConditions.elementToBeClickable(element));
     }

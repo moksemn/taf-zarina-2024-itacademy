@@ -22,7 +22,7 @@ public class DataGenerator {
     }
 
     public static String getRandomCorrectProduct() {
-        List<String> products = new ArrayList<>(Arrays.asList("джинсы", "футболка", "платье", "сумка", "свитер"));
+        List<String> products = new ArrayList<>(Arrays.asList("джинсы", "футболка", "платье", "сумка"));
         return products.get(getRandomNumber(products.size() - 1));
     }
 
