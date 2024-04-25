@@ -23,6 +23,8 @@ public class SearchPage {
     private WebElement searchErrorMessage;
     @FindBy(css = "h1.digi-category__title_slim")
     private WebElement titleSuccessfulSearch;
+    @FindBy(xpath = "//button[@class=\"digi-search-form__submit\"]")
+    private WebElement submitSearchBtn;
     private WebDriver driver;
 
     public SearchPage() {
@@ -32,7 +34,8 @@ public class SearchPage {
 
     @Step("Поиск товара")
     public SearchPage search(Product product) {
-        inputSearch.sendKeys(product.getName(), Keys.ENTER);
+        inputSearch.sendKeys(product.getName());
+        submitSearchBtn.click();
         return this;
     }
 
