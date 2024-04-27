@@ -6,10 +6,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import ru.zarina.ui.domain.model.Product;
 import ru.zarina.ui.driver.DriverSingleton;
 import ru.zarina.ui.waiters.Waiters;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -19,7 +22,7 @@ public class SearchPage {
     private WebElement inputSearch;
     @FindBy(css = "div.digi-product__label")
     private List<WebElement> productsName;
-    @FindBy(css = "div.digi-empty>p:nth-child(1)")
+    @FindBy(xpath = "//div[@class=\"digi-empty\"]/p[1]")//(css = "div.digi-empty>p:nth-child(1)")
     private WebElement searchErrorMessage;
     @FindBy(css = "h1.digi-category__title_slim")
     private WebElement titleSuccessfulSearch;
@@ -34,13 +37,13 @@ public class SearchPage {
 
     @Step("Поиск товара")
     public SearchPage search(Product product) {
-        inputSearch.sendKeys(product.getName());
-        submitSearchBtn.click();
+        inputSearch.sendKeys(product.getName(), Keys.ENTER);
         return this;
     }
 
     @Step("Получение сообщения об отсутсвии найденных товаров")
     public String getTextSearchErrorMessage() {
+        Waiters.waitForVisibilityOfElement(searchErrorMessage).isDisplayed();
         return Waiters.waitForVisibilityOfElement(searchErrorMessage).getText();
     }
 
