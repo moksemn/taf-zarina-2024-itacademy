@@ -9,7 +9,7 @@ import java.util.List;
 
 public class ApiTestListener implements BeforeEachCallback {
     @Override
-    public void beforeEach(ExtensionContext extensionContext) throws Exception {
+    public void beforeEach(ExtensionContext extensionContext) {
         RestAssured.replaceFiltersWith(List.of());
         RestAssured.filters(new AllureRestAssured());
     }
