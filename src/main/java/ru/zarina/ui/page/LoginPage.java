@@ -1,6 +1,7 @@
 package ru.zarina.ui.page;
 
 import io.qameta.allure.Step;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -67,8 +68,7 @@ public class LoginPage {
 
     @Step("Вход в профиль пользователя")
     public LoginPage openProfile() {
-        Waiters.waitForVisibilityOfElement(profileBtn).isDisplayed();
-        Waiters.waitForVisibilityOfElement(profileBtn).click();
+        Waiters.waitForVisibilityOfElement(Waiters.waitForElementToBeClickable(profileBtn)).click();
         return this;
     }
 }

@@ -43,7 +43,6 @@ public class SearchPage {
 
     @Step("Получение сообщения об отсутсвии найденных товаров")
     public String getTextSearchErrorMessage() {
-        Waiters.waitForVisibilityOfElement(searchErrorMessage).isDisplayed();
         return Waiters.waitForVisibilityOfElement(searchErrorMessage).getText();
     }
 
