@@ -15,6 +15,18 @@
 * Rest Assured <a href="https://rest-assured.io/"><img src="/img/icons/rest-assured.png" height="40"></a>
 * WebDriverManager <a href="https://github.com/bonigarcia/webdrivermanager"><img src="/img/icons/webdrivermanager.png" height="40"></a>
 * Java Faker <a href="https://github.com/DiUS/java-faker"><img src="/img/icons/javafaker.png" height="25"></a>
+* Log4j2 <a href="[https://docs.qameta.io/allure/](https://logging.apache.org/log4j/2.x/manual/configuration.html)"><img src="/img/icons/log4j.png" height="40"></a>
+
+## Structure of the project
+* Driver: creation of WebDriver instance.
+* Page: contains PageObjects.
+* Waiters: contains methods explicit wait and fluent wait.
+* Utils: contains data generator (emails, passwords, random numbers,random strings,correct products) and Decoder JSON.
+* Domain: contains test data for UI tests
+* Api: contains factories for API requests generation and response services 
+* Listener:contains API test listener and UI test listener
+* UI tests
+* API test
 
 ## Local launch of autotests
 To run the project locally, install [Maven](https://maven.apache.org/download.cgi) and [Java](https://www.java.com/en/download/) to the local machine, enter the following commands in the console:
