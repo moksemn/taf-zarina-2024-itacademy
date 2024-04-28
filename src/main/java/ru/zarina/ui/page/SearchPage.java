@@ -1,6 +1,8 @@
 package ru.zarina.ui.page;
 
 import io.qameta.allure.Step;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -35,19 +37,24 @@ public class SearchPage {
         PageFactory.initElements(driver, this);
     }
 
+    private static final Logger logger = LogManager.getLogger();
+
     @Step("Поиск товара")
     public SearchPage search(Product product) {
+        logger.info("Search product " + product.getName());
         inputSearch.sendKeys(product.getName(), Keys.ENTER);
         return this;
     }
 
     @Step("Получение сообщения об отсутсвии найденных товаров")
     public String getTextSearchErrorMessage() {
+        logger.info("Get text search error message");
         return Waiters.waitForVisibilityOfElement(searchErrorMessage).getText();
     }
 
     @Step("Получение списка названий найденных товаров")
     public List<String> getProductsNames() {
+        logger.info("Get products names");
         Waiters.waitForVisibilityOfElement(titleSuccessfulSearch).isDisplayed();
         return productsName.stream().map(x -> x.getText().toLowerCase()).collect(Collectors.toList());
     }

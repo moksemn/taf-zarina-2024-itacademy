@@ -1,6 +1,8 @@
 package ru.zarina.ui.page;
 
 import io.qameta.allure.Step;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,19 +26,24 @@ public class CartPage {
         PageFactory.initElements(driver, this);
     }
 
+    private static final Logger logger = LogManager.getLogger();
+
     @Step("Получение названия товара в корзине")
     public String getTextProductTitleInCart() {
+        logger.info("Get text product title  in cart");
         return Waiters.waitForVisibilityOfElement(productTitleInCart).getText();
     }
 
     @Step("Удаление товара из корзины")
     public CartPage deleteProductFromCart() {
+        logger.info("Delete product from cart");
         Waiters.waitForElementToBeClickable(deleteProductFromCartBtn).click();
         return this;
     }
 
     @Step("Получение сообщения об отсутствии товаров в корзине")
     public String getTextMessageEmptyCart() {
+        logger.info("Get text message empty cart");
         return Waiters.waitForVisibilityOfElement(messageEmptyCart).getText();
     }
 }

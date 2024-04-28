@@ -1,6 +1,8 @@
 package ru.zarina.ui.page;
 
 import io.qameta.allure.Step;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,8 +28,11 @@ public class CatalogPage {
         PageFactory.initElements(driver, this);
     }
 
+    private static final Logger logger = LogManager.getLogger();
+
     @Step("Открытие первого товара в каталоге")
     public CatalogPage openFirstProductInCatalog() {
+        logger.info("Open first product in catalog");
         Waiters.waitForVisibilityOfElement(catalogTitle).isDisplayed();
         Waiters.waitForElementToBeClickable(firstProductInCatalog).click();
         return this;
@@ -35,18 +40,21 @@ public class CatalogPage {
 
     @Step("Получение названия товара в карточке продукта")
     public String getTextProductTitle() {
+        logger.info("Get text product title");
         return Waiters.waitForVisibilityOfElement(productTitle).getText()
                 .replaceAll("[^а-яА-Яa-zA-Z\\s]", "").trim();
     }
 
     @Step("Добавление товара в корзину")
     public HomePage addProductToCart() {
+        logger.info("Add product to cart");
         Waiters.waitForVisibilityOfElement(addProductToCartBtn).click();
         return new HomePage();
     }
 
     @Step("Добавление товара в избранное")
     public HomePage addProductToFavorites() {
+        logger.info("Add product to favorites");
         Waiters.waitForVisibilityOfElement(addProductToFavoritesBtn).click();
         return new HomePage();
     }

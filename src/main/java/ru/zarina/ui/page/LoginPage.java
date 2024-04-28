@@ -1,6 +1,8 @@
 package ru.zarina.ui.page;
 
 import io.qameta.allure.Step;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -38,36 +40,46 @@ public class LoginPage {
         PageFactory.initElements(driver, this);
     }
 
+    private static final Logger logger = LogManager.getLogger();
+
     @Step("Ввод данных в форму авторизации и нажатие кнопки войти")
     public LoginPage login(User user) {
+        logger.info("Filling email field: " + user.getEmail());
         inputEmail.sendKeys(user.getEmail());
+        logger.info("Filling password field: " + user.getPassword());
         inputPassword.sendKeys(user.getPassword());
+        logger.info("Click sign in");
         signInBtn.click();
         return this;
     }
 
     @Step("Получение сообщения о некоректности введенных данных")
     public String getTextLoginErrorMessage() {
+        logger.info("Get text login error message");
         return Waiters.waitForVisibilityOfElement(loginErrorMessage).getText();
     }
 
     @Step("Получение сообщения об отсутствии адреса электронной почты")
     public String getTextEmailErrorMessage() {
+        logger.info("Get text email error message");
         return Waiters.waitForVisibilityOfElement(emailErrorMessage).getText();
     }
 
     @Step("Получение сообщения об отсутствии пароля")
     public String getTextPasswordErrorMessage() {
+        logger.info("Get text password error message");
         return Waiters.waitForVisibilityOfElement(passwordErrorMessage).getText();
     }
 
     @Step("Получение заголовка успешной авторизации")
     public String getTextTitleSuccessfulLogin() {
+        logger.info("Get text title successful login");
         return Waiters.waitForVisibilityOfElement(titleSuccessfulLogin).getText();
     }
 
     @Step("Вход в профиль пользователя")
     public LoginPage openProfile() {
+        logger.info("Open profile");
         Waiters.waitForVisibilityOfElement(Waiters.waitForElementToBeClickable(profileBtn)).click();
         return this;
     }

@@ -1,6 +1,8 @@
 package ru.zarina.ui.page;
 
 import io.qameta.allure.Step;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -25,14 +27,17 @@ public class FavoritesPage {
         this.driver = DriverSingleton.getDriver();
         PageFactory.initElements(driver, this);
     }
+    private static final Logger logger = LogManager.getLogger();
 
     @Step("Получение названия товара в избранном")
     public String getTextProductTitleInFavorites() {
+        logger.info("Get text product title in favorites");
         return Waiters.waitForVisibilityOfElement(productTitleInFavorites).getText();
     }
 
     @Step("Удаление товара из избранного")
     public FavoritesPage deleteProductFromFavorites() {
+        logger.info("Delete product from favorites");
         Waiters.waitForVisibilityOfElement(deleteProductFromFavoritesBtn).isDisplayed();
         new Actions(driver)
                 .moveToElement(deleteProductFromFavoritesBtn).click()
@@ -42,6 +47,7 @@ public class FavoritesPage {
 
     @Step("Получение сообщения об отсутствии товаров в избранном")
     public String getTextMessageEmptyFavorites() {
+        logger.info("Get text message empty favorites");
         return Waiters.waitForVisibilityOfElement(messageEmptyFavorites).getText();
     }
 }

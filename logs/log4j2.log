@@ -1,0 +1,213 @@
+2024-04-28 07:11:14,662 INFO r.z.u.p.HomePage [main] Open home page
+2024-04-28 07:14:02,520 INFO r.z.u.p.HomePage [main] Close advertising
+2024-04-28 07:14:02,521 INFO r.z.u.p.HomePage [main] Confirm city
+2024-04-28 07:14:03,238 INFO r.z.u.p.HomePage [main] Accept cookies
+2024-04-28 07:14:03,427 INFO r.z.u.p.HomePage [main] Open catalog page
+2024-04-28 07:14:04,456 INFO r.z.u.p.CatalogPage [main] Open first product in catalog
+2024-04-28 07:14:08,834 INFO r.z.u.p.CatalogPage [main] Add product to cart
+2024-04-28 07:14:10,532 INFO r.z.u.p.HomePage [main] Open cart page
+2024-04-28 07:14:10,714 INFO r.z.u.p.CartPage [main] Delete product from cart
+2024-04-28 07:14:11,582 INFO r.z.u.p.CartPage [main] Get text message empty cart
+2024-04-28 07:14:18,260 INFO r.z.u.p.HomePage [main] Open home page
+2024-04-28 07:14:42,268 INFO r.z.u.p.HomePage [main] Close advertising
+2024-04-28 07:14:42,269 INFO r.z.u.p.HomePage [main] Confirm city
+2024-04-28 07:14:42,918 INFO r.z.u.p.HomePage [main] Accept cookies
+2024-04-28 07:14:43,034 INFO r.z.u.p.HomePage [main] Open catalog page
+2024-04-28 07:14:43,969 INFO r.z.u.p.CatalogPage [main] Open first product in catalog
+2024-04-28 07:14:47,006 INFO r.z.u.p.CatalogPage [main] Get text product title
+2024-04-28 07:14:47,763 INFO r.z.u.p.CatalogPage [main] Add product to cart
+2024-04-28 07:14:47,929 INFO r.z.u.p.HomePage [main] Open cart page
+2024-04-28 07:14:48,075 INFO r.z.u.p.CartPage [main] Get text product title  in cart
+2024-04-28 07:14:51,223 INFO r.z.u.p.HomePage [main] Open home page
+2024-04-28 07:17:10,877 INFO r.z.u.p.HomePage [main] Close advertising
+2024-04-28 07:17:10,878 INFO r.z.u.p.HomePage [main] Confirm city
+2024-04-28 07:17:11,640 INFO r.z.u.p.HomePage [main] Accept cookies
+2024-04-28 07:17:11,909 INFO r.z.u.p.HomePage [main] Open catalog page
+2024-04-28 07:17:12,838 INFO r.z.u.p.CatalogPage [main] Open first product in catalog
+2024-04-28 07:17:15,586 INFO r.z.u.p.CatalogPage [main] Get text product title
+2024-04-28 07:17:19,496 INFO r.z.u.p.CatalogPage [main] Add product to favorites
+2024-04-28 07:17:19,635 INFO r.z.u.p.HomePage [main] Open favorites page
+2024-04-28 07:17:19,964 INFO r.z.u.p.FavoritesPage [main] Get text product title in favorites
+2024-04-28 07:17:23,375 INFO r.z.u.p.HomePage [main] Open home page
+2024-04-28 07:18:39,301 INFO r.z.u.p.HomePage [main] Close advertising
+2024-04-28 07:18:39,302 INFO r.z.u.p.HomePage [main] Confirm city
+2024-04-28 07:18:40,401 INFO r.z.u.p.HomePage [main] Accept cookies
+2024-04-28 07:18:40,547 INFO r.z.u.p.HomePage [main] Open catalog page
+2024-04-28 07:18:41,521 INFO r.z.u.p.CatalogPage [main] Open first product in catalog
+2024-04-28 07:18:44,380 INFO r.z.u.p.CatalogPage [main] Add product to favorites
+2024-04-28 07:18:47,141 INFO r.z.u.p.HomePage [main] Open favorites page
+2024-04-28 07:18:47,434 INFO r.z.u.p.FavoritesPage [main] Delete product from favorites
+2024-04-28 07:18:48,865 INFO r.z.u.p.FavoritesPage [main] Get text message empty favorites
+2024-04-28 07:18:51,767 INFO r.z.u.p.HomePage [main] Open home page
+2024-04-28 07:20:04,392 INFO r.z.u.p.HomePage [main] Close advertising
+2024-04-28 07:20:04,401 INFO r.z.u.p.HomePage [main] Confirm city
+2024-04-28 07:20:05,185 INFO r.z.u.p.HomePage [main] Accept cookies
+2024-04-28 07:20:05,357 INFO r.z.u.p.HomePage [main] Open login page
+2024-04-28 07:20:06,012 INFO r.z.u.p.LoginPage [main] Filling email field: black2000752@gmail.com
+2024-04-28 07:20:06,448 INFO r.z.u.p.LoginPage [main] Filling password field: 1221246636ww2293
+2024-04-28 07:20:06,657 INFO r.z.u.p.LoginPage [main] Click sign in
+2024-04-28 07:20:06,819 INFO r.z.u.p.LoginPage [main] Open profile
+2024-04-28 07:20:07,768 INFO r.z.u.p.LoginPage [main] Get text title successful login
+2024-04-28 07:20:15,210 INFO r.z.u.p.HomePage [main] Open home page
+2024-04-28 07:21:37,379 INFO r.z.u.p.HomePage [main] Close advertising
+2024-04-28 07:21:37,380 INFO r.z.u.p.HomePage [main] Confirm city
+2024-04-28 07:21:39,447 INFO r.z.u.p.HomePage [main] Accept cookies
+2024-04-28 07:21:39,599 INFO r.z.u.p.HomePage [main] Open login page
+2024-04-28 07:21:42,635 INFO r.z.u.p.LoginPage [main] Filling email field: piedad.glover@hotmail.com
+2024-04-28 07:21:44,762 INFO r.z.u.p.LoginPage [main] Filling password field: 
+2024-04-28 07:21:44,858 INFO r.z.u.p.LoginPage [main] Click sign in
+2024-04-28 07:21:45,033 INFO r.z.u.p.LoginPage [main] Get text password error message
+2024-04-28 07:21:57,818 INFO r.z.u.p.HomePage [main] Open home page
+2024-04-28 07:24:52,346 INFO r.z.u.p.HomePage [main] Close advertising
+2024-04-28 07:24:52,347 INFO r.z.u.p.HomePage [main] Confirm city
+2024-04-28 07:24:53,303 INFO r.z.u.p.HomePage [main] Accept cookies
+2024-04-28 07:24:53,539 INFO r.z.u.p.HomePage [main] Open login page
+2024-04-28 07:24:54,023 INFO r.z.u.p.LoginPage [main] Filling email field: 
+2024-04-28 07:24:54,567 INFO r.z.u.p.LoginPage [main] Filling password field: vgyhlwlc
+2024-04-28 07:24:55,040 INFO r.z.u.p.LoginPage [main] Click sign in
+2024-04-28 07:24:55,288 INFO r.z.u.p.LoginPage [main] Get text email error message
+2024-04-28 07:25:06,649 INFO r.z.u.p.HomePage [main] Open home page
+2024-04-28 07:26:28,197 INFO r.z.u.p.HomePage [main] Close advertising
+2024-04-28 07:26:28,198 INFO r.z.u.p.HomePage [main] Confirm city
+2024-04-28 07:26:28,892 INFO r.z.u.p.HomePage [main] Accept cookies
+2024-04-28 07:26:29,077 INFO r.z.u.p.HomePage [main] Open login page
+2024-04-28 07:26:29,528 INFO r.z.u.p.LoginPage [main] Filling email field: 
+2024-04-28 07:26:29,702 INFO r.z.u.p.LoginPage [main] Filling password field: 
+2024-04-28 07:26:29,906 INFO r.z.u.p.LoginPage [main] Click sign in
+2024-04-28 07:26:30,307 INFO r.z.u.p.LoginPage [main] Get text email error message
+2024-04-28 07:26:30,435 INFO r.z.u.p.LoginPage [main] Get text password error message
+2024-04-28 07:26:33,958 INFO r.z.u.p.HomePage [main] Open home page
+2024-04-28 07:27:51,499 INFO r.z.u.p.HomePage [main] Close advertising
+2024-04-28 07:27:51,500 INFO r.z.u.p.HomePage [main] Confirm city
+2024-04-28 07:27:53,770 INFO r.z.u.p.HomePage [main] Accept cookies
+2024-04-28 07:27:54,031 INFO r.z.u.p.HomePage [main] Open login page
+2024-04-28 07:27:54,357 INFO r.z.u.p.LoginPage [main] Filling email field: young.cummings@hotmail.com
+2024-04-28 07:27:54,688 INFO r.z.u.p.LoginPage [main] Filling password field: donhb4cxcr4
+2024-04-28 07:27:54,962 INFO r.z.u.p.LoginPage [main] Click sign in
+2024-04-28 07:27:55,144 INFO r.z.u.p.LoginPage [main] Get text login error message
+2024-04-28 07:27:59,858 INFO r.z.u.p.HomePage [main] Open home page
+2024-04-28 07:29:37,056 INFO r.z.u.p.HomePage [main] Close advertising
+2024-04-28 07:29:37,056 INFO r.z.u.p.HomePage [main] Confirm city
+2024-04-28 07:29:37,691 INFO r.z.u.p.HomePage [main] Accept cookies
+2024-04-28 07:29:37,959 INFO r.z.u.p.HomePage [main] Open search page
+2024-04-28 07:29:38,414 INFO r.z.u.p.SearchPage [main] Search product fqmd8f06ktdcvr
+2024-04-28 07:29:38,626 INFO r.z.u.p.SearchPage [main] Get text search error message
+2024-04-28 07:29:42,602 INFO r.z.u.p.HomePage [main] Open home page
+2024-04-28 07:31:05,582 INFO r.z.u.p.HomePage [main] Close advertising
+2024-04-28 07:31:05,585 INFO r.z.u.p.HomePage [main] Confirm city
+2024-04-28 07:31:06,480 INFO r.z.u.p.HomePage [main] Accept cookies
+2024-04-28 07:31:06,723 INFO r.z.u.p.HomePage [main] Open search page
+2024-04-28 07:31:06,914 INFO r.z.u.p.SearchPage [main] Search product платье
+2024-04-28 07:31:07,206 INFO r.z.u.p.SearchPage [main] Get products names
+2024-04-28 07:41:37,268 INFO r.z.u.p.HomePage [main] Open home page
+2024-04-28 07:42:57,477 INFO r.z.u.p.HomePage [main] Close advertising
+2024-04-28 07:42:57,479 INFO r.z.u.p.HomePage [main] Confirm city
+2024-04-28 07:42:58,284 INFO r.z.u.p.HomePage [main] Accept cookies
+2024-04-28 07:42:58,571 INFO r.z.u.p.HomePage [main] Open catalog page
+2024-04-28 07:42:59,831 INFO r.z.u.p.CatalogPage [main] Open first product in catalog
+2024-04-28 07:43:06,470 INFO r.z.u.p.CatalogPage [main] Add product to cart
+2024-04-28 07:43:07,567 INFO r.z.u.p.HomePage [main] Open cart page
+2024-04-28 07:43:07,850 INFO r.z.u.p.CartPage [main] Delete product from cart
+2024-04-28 07:43:08,780 INFO r.z.u.p.CartPage [main] Get text message empty cart
+2024-04-28 07:43:09,437 INFO r.z.l.UiTestListener [main] Test successful UI:Delete an added product from the cart
+2024-04-28 07:43:13,904 INFO r.z.u.p.HomePage [main] Open home page
+2024-04-28 07:44:27,306 INFO r.z.u.p.HomePage [main] Close advertising
+2024-04-28 07:44:27,307 INFO r.z.u.p.HomePage [main] Confirm city
+2024-04-28 07:44:28,408 INFO r.z.u.p.HomePage [main] Accept cookies
+2024-04-28 07:44:28,630 INFO r.z.u.p.HomePage [main] Open catalog page
+2024-04-28 07:44:30,037 INFO r.z.u.p.CatalogPage [main] Open first product in catalog
+2024-04-28 07:44:33,307 INFO r.z.u.p.CatalogPage [main] Get text product title
+2024-04-28 07:44:35,152 INFO r.z.u.p.CatalogPage [main] Add product to cart
+2024-04-28 07:44:35,514 INFO r.z.u.p.HomePage [main] Open cart page
+2024-04-28 07:44:35,714 INFO r.z.u.p.CartPage [main] Get text product title  in cart
+2024-04-28 07:44:36,862 INFO r.z.l.UiTestListener [main] Test successful UI:Adding a product to cart
+2024-04-28 07:44:39,601 INFO r.z.u.p.HomePage [main] Open home page
+2024-04-28 07:45:11,099 INFO r.z.u.p.HomePage [main] Close advertising
+2024-04-28 07:45:11,100 INFO r.z.u.p.HomePage [main] Confirm city
+2024-04-28 07:45:11,627 INFO r.z.u.p.HomePage [main] Accept cookies
+2024-04-28 07:45:11,768 INFO r.z.u.p.HomePage [main] Open catalog page
+2024-04-28 07:45:12,763 INFO r.z.u.p.CatalogPage [main] Open first product in catalog
+2024-04-28 07:45:14,913 INFO r.z.u.p.CatalogPage [main] Get text product title
+2024-04-28 07:45:16,712 INFO r.z.u.p.CatalogPage [main] Add product to favorites
+2024-04-28 07:45:16,826 INFO r.z.u.p.HomePage [main] Open favorites page
+2024-04-28 07:45:17,183 INFO r.z.u.p.FavoritesPage [main] Get text product title in favorites
+2024-04-28 07:45:17,829 INFO r.z.l.UiTestListener [main] Test successful UI:Adding a product to favorites
+2024-04-28 07:45:20,331 INFO r.z.u.p.HomePage [main] Open home page
+2024-04-28 07:47:41,961 INFO r.z.u.p.HomePage [main] Close advertising
+2024-04-28 07:47:41,962 INFO r.z.u.p.HomePage [main] Confirm city
+2024-04-28 07:47:42,789 INFO r.z.u.p.HomePage [main] Accept cookies
+2024-04-28 07:47:42,999 INFO r.z.u.p.HomePage [main] Open catalog page
+2024-04-28 07:47:43,944 INFO r.z.u.p.CatalogPage [main] Open first product in catalog
+2024-04-28 07:47:47,832 INFO r.z.u.p.CatalogPage [main] Add product to favorites
+2024-04-28 07:47:48,930 INFO r.z.u.p.HomePage [main] Open favorites page
+2024-04-28 07:47:49,238 INFO r.z.u.p.FavoritesPage [main] Delete product from favorites
+2024-04-28 07:47:50,122 INFO r.z.u.p.FavoritesPage [main] Get text message empty favorites
+2024-04-28 07:47:50,770 INFO r.z.l.UiTestListener [main] Test successful UI:Delete an added product from the favorites
+2024-04-28 07:47:53,386 INFO r.z.u.p.HomePage [main] Open home page
+2024-04-28 07:49:06,708 INFO r.z.u.p.HomePage [main] Close advertising
+2024-04-28 07:49:06,710 INFO r.z.u.p.HomePage [main] Confirm city
+2024-04-28 07:49:07,556 INFO r.z.u.p.HomePage [main] Accept cookies
+2024-04-28 07:49:07,690 INFO r.z.u.p.HomePage [main] Open login page
+2024-04-28 07:49:07,972 INFO r.z.u.p.LoginPage [main] Filling email field: black2000752@gmail.com
+2024-04-28 07:49:08,225 INFO r.z.u.p.LoginPage [main] Filling password field: 1221246636ww2293
+2024-04-28 07:49:08,462 INFO r.z.u.p.LoginPage [main] Click sign in
+2024-04-28 07:49:08,609 INFO r.z.u.p.LoginPage [main] Open profile
+2024-04-28 07:49:09,588 INFO r.z.u.p.LoginPage [main] Get text title successful login
+2024-04-28 07:49:10,200 INFO r.z.l.UiTestListener [main] Test successful UI:POST Registered user login
+2024-04-28 07:49:12,088 INFO r.z.u.p.HomePage [main] Open home page
+2024-04-28 07:50:25,340 INFO r.z.u.p.HomePage [main] Close advertising
+2024-04-28 07:50:25,347 INFO r.z.u.p.HomePage [main] Confirm city
+2024-04-28 07:50:26,077 INFO r.z.u.p.HomePage [main] Accept cookies
+2024-04-28 07:50:26,239 INFO r.z.u.p.HomePage [main] Open login page
+2024-04-28 07:50:26,537 INFO r.z.u.p.LoginPage [main] Filling email field: devin.bernhard@yahoo.com
+2024-04-28 07:50:26,896 INFO r.z.u.p.LoginPage [main] Filling password field: 
+2024-04-28 07:50:27,039 INFO r.z.u.p.LoginPage [main] Click sign in
+2024-04-28 07:50:27,184 INFO r.z.u.p.LoginPage [main] Get text password error message
+2024-04-28 07:50:27,294 INFO r.z.l.UiTestListener [main] Test successful UI:Login with empty password field
+2024-04-28 07:50:29,302 INFO r.z.u.p.HomePage [main] Open home page
+2024-04-28 07:51:41,694 INFO r.z.u.p.HomePage [main] Close advertising
+2024-04-28 07:51:41,696 INFO r.z.u.p.HomePage [main] Confirm city
+2024-04-28 07:51:42,547 INFO r.z.u.p.HomePage [main] Accept cookies
+2024-04-28 07:51:42,748 INFO r.z.u.p.HomePage [main] Open login page
+2024-04-28 07:51:42,977 INFO r.z.u.p.LoginPage [main] Filling email field: 
+2024-04-28 07:51:43,094 INFO r.z.u.p.LoginPage [main] Filling password field: hykbtrce0zq87
+2024-04-28 07:51:43,291 INFO r.z.u.p.LoginPage [main] Click sign in
+2024-04-28 07:51:43,413 INFO r.z.u.p.LoginPage [main] Get text email error message
+2024-04-28 07:51:43,520 INFO r.z.l.UiTestListener [main] Test successful UI:Login with empty email field
+2024-04-28 07:51:45,902 INFO r.z.u.p.HomePage [main] Open home page
+2024-04-28 07:52:06,972 INFO r.z.u.p.HomePage [main] Close advertising
+2024-04-28 07:52:06,973 INFO r.z.u.p.HomePage [main] Confirm city
+2024-04-28 07:52:07,568 INFO r.z.u.p.HomePage [main] Accept cookies
+2024-04-28 07:52:07,781 INFO r.z.u.p.HomePage [main] Open login page
+2024-04-28 07:52:08,005 INFO r.z.u.p.LoginPage [main] Filling email field: 
+2024-04-28 07:52:08,157 INFO r.z.u.p.LoginPage [main] Filling password field: 
+2024-04-28 07:52:08,279 INFO r.z.u.p.LoginPage [main] Click sign in
+2024-04-28 07:52:08,457 INFO r.z.u.p.LoginPage [main] Get text email error message
+2024-04-28 07:52:08,554 INFO r.z.u.p.LoginPage [main] Get text password error message
+2024-04-28 07:52:08,763 INFO r.z.l.UiTestListener [main] Test successful UI:Login with empty email and password fields
+2024-04-28 07:52:11,111 INFO r.z.u.p.HomePage [main] Open home page
+2024-04-28 07:52:33,182 INFO r.z.u.p.HomePage [main] Close advertising
+2024-04-28 07:52:33,183 INFO r.z.u.p.HomePage [main] Confirm city
+2024-04-28 07:52:33,777 INFO r.z.u.p.HomePage [main] Accept cookies
+2024-04-28 07:52:33,953 INFO r.z.u.p.HomePage [main] Open login page
+2024-04-28 07:52:34,197 INFO r.z.u.p.LoginPage [main] Filling email field: jesusita.davis@hotmail.com
+2024-04-28 07:52:34,491 INFO r.z.u.p.LoginPage [main] Filling password field: o4v3mth8m1
+2024-04-28 07:52:34,768 INFO r.z.u.p.LoginPage [main] Click sign in
+2024-04-28 07:52:34,878 INFO r.z.u.p.LoginPage [main] Get text login error message
+2024-04-28 07:52:35,463 INFO r.z.l.UiTestListener [main] Test successful UI:POST Unregistered user login
+2024-04-28 07:52:37,767 INFO r.z.u.p.HomePage [main] Open home page
+2024-04-28 07:53:49,782 INFO r.z.u.p.HomePage [main] Close advertising
+2024-04-28 07:53:49,783 INFO r.z.u.p.HomePage [main] Confirm city
+2024-04-28 07:53:50,568 INFO r.z.u.p.HomePage [main] Accept cookies
+2024-04-28 07:53:50,809 INFO r.z.u.p.HomePage [main] Open search page
+2024-04-28 07:53:51,004 INFO r.z.u.p.SearchPage [main] Search product lo27xi8pesracy
+2024-04-28 07:53:51,259 INFO r.z.u.p.SearchPage [main] Get text search error message
+2024-04-28 07:53:52,422 INFO r.z.l.UiTestListener [main] Test successful UI:Search with incorrect product
+2024-04-28 07:53:54,514 INFO r.z.u.p.HomePage [main] Open home page
+2024-04-28 07:54:16,492 INFO r.z.u.p.HomePage [main] Close advertising
+2024-04-28 07:54:16,494 INFO r.z.u.p.HomePage [main] Confirm city
+2024-04-28 07:54:17,337 INFO r.z.u.p.HomePage [main] Accept cookies
+2024-04-28 07:54:17,576 INFO r.z.u.p.HomePage [main] Open search page
+2024-04-28 07:54:17,722 INFO r.z.u.p.SearchPage [main] Search product платье
+2024-04-28 07:54:17,983 INFO r.z.u.p.SearchPage [main] Get products names
+2024-04-28 07:54:19,461 INFO r.z.l.UiTestListener [main] Test successful UI:Search with correct product
