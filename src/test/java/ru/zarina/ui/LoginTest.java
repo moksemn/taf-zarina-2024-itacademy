@@ -18,7 +18,7 @@ public class LoginTest extends BaseTest {
     }
 
     @Test
-    @DisplayName("UI:POST Registered user login")
+    @DisplayName("UI:Registered user login")
     public void testRegisteredUserLogin() {
         String titleSuccessfulLogin = new LoginPage()
                 .login(UserCreator.withRegisteredUser())
@@ -28,7 +28,7 @@ public class LoginTest extends BaseTest {
     }
 
     @Test
-    @DisplayName("UI:POST Unregistered user login")
+    @DisplayName("UI:Unregistered user login")
     public void testUnregisteredUserLogin() {
         String loginErrorMessage = new LoginPage()
                 .login(UserCreator.withUnregisteredUser())
